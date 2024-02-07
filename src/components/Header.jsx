@@ -38,7 +38,7 @@ export default function Header() {
         }
     ]
     return (
-        <div className='flex items-center justify-between w-screen p-5'>
+        <div className='flex items-center justify-between p-5'>
             <div className='flex' >
                 <img src={logo} className='w-[6rem] md:w-[8rem] mr-4 object-cover' />
                 <div className='hidden md:flex gap-12'>
@@ -53,7 +53,7 @@ export default function Header() {
 
                     <div className='flex md:hidden' onClick={() => setToggle(!toggle)}>
                         <HeaderItem name={''} Icon={HiDotsVertical} />
-                        {toggle && <div className='absolute mt-10 border-[1px] border-gray-700 py-5 px-3'>
+                        {toggle && <div className='mt-10 border-[1px] border-gray-700 py-5 px-3'>
                             {menu.map((item, index) => index > 2 && (
                                 <HeaderItem name={item.name} Icon={item.icon} />
                             ))}

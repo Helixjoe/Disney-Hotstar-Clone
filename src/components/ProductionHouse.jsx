@@ -40,7 +40,7 @@ export default function ProductionHouse() {
 
     ]
     return (
-        <div className='flex gap-5 px-20 py-10 w-screen'>
+        <div className='flex gap-2 px-5 md:gap-5 px-20 py-10'>
             {productionHouseList.map((item) => (<div className='border-[4px]  border-gray-400 rounded-lg hover:scale-110 transition-all relative duration-300 ease-in-out cursor-pointer relative shadow-lg shadow-gray-700'>
                 <video src={item.video} className='absolute top-0 z-0 opacity-0 hover:opacity-50' autoPlay loop mute playsInline />
                 <img src={item.image} className='w-full z-[1] opacity-100' />
